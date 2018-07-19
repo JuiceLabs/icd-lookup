@@ -1,6 +1,5 @@
-package models;
+package com.juicelabs.icd.models;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 
 @Entity

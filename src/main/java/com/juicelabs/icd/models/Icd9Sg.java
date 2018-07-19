@@ -1,4 +1,4 @@
-package models;
+package com.juicelabs.icd.models;
 
 import javax.persistence.Entity;
 

@@ -1,11 +1,11 @@
-package icd;
+package com.juicelabs.icd;
 
-import jpa.Icd10Repository;
-import jpa.Icd9DxRepository;
-import jpa.Icd9SgRepository;
-import models.Icd10;
-import models.Icd9Dx;
-import models.Icd9Sg;
+import com.juicelabs.icd.jpa.Icd10Repository;
+import com.juicelabs.icd.jpa.Icd9DxRepository;
+import com.juicelabs.icd.jpa.Icd9SgRepository;
+import com.juicelabs.icd.models.Icd10;
+import com.juicelabs.icd.models.Icd9Dx;
+import com.juicelabs.icd.models.Icd9Sg;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

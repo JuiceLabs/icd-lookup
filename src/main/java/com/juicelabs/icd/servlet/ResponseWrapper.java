@@ -1,4 +1,4 @@
-package icd;
+package com.juicelabs.icd.servlet;
 
 import javax.servlet.ServletOutputStream;
 import javax.servlet.WriteListener;

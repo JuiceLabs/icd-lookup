@@ -1,4 +1,4 @@
-package icd;
+package com.juicelabs.icd;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
