@@ -1,1 +1,1 @@
-# icd-lookup
+# com.juicelabs.icd-lookup

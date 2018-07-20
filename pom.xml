@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.juicelabs</groupId>
-    <artifactId>icd-lookup</artifactId>
+    <artifactId>com.juicelabs.icd-lookup</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <parent>
@@ -60,6 +60,8 @@
             <scope>test</scope>
         </dependency>
         <!-- end::tests[] -->
+
+
     </dependencies>
 
     <properties>
