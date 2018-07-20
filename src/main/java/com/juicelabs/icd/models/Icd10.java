@@ -1,6 +1,8 @@
 package com.juicelabs.icd.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.search.annotations.Field;
+import org.hibernate.search.annotations.Indexed;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
+@Indexed
 public class Icd10 {
 
     @JsonIgnore
@@ -23,12 +26,14 @@ public class Icd10 {
     private String diagnosisCode;
 
     @Column
+    @Field
     private String fullCode;
 
     @Column
     private String abbreviatedDescription;
 
     @Column
+    @Field
     private String fullDescription;
 
     @Column

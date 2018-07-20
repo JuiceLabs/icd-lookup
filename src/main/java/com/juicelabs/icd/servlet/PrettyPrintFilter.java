@@ -52,7 +52,7 @@ public class PrettyPrintFilter implements Filter {
 
     // hacky but works for this demo.
     private boolean isBrowser(HttpServletRequest request) {
-        return request.getHeader("user-agent") != null ? request.getHeader("user-agent").contains("Moz") : false;
+        return request.getHeader("user-agent") != null && request.getHeader("user-agent").contains("Moz");
     }
 
     private boolean hasContent(ResponseWrapper wrapper) {
@@ -60,7 +60,7 @@ public class PrettyPrintFilter implements Filter {
     }
 
     private boolean isJsonResponse(HttpServletResponse response) {
-        return response.getContentType().contains(APPLICATION_JSON_VALUE);
+        return response.getContentType() != null && response.getContentType().contains(APPLICATION_JSON_VALUE);
     }
 
     private HttpServletRequest getRequest(final HttpServletRequest request) {

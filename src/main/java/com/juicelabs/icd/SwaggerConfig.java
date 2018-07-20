@@ -18,6 +18,7 @@ public class SwaggerConfig {
                 .apis(RequestHandlerSelectors.any())
                 .paths(PathSelectors.any())
                 .build()
+                //           .produces(ImmutableSet.of(MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE))
                 .pathMapping("/api/v2");
     }
 }
